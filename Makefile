@@ -4,6 +4,8 @@ ENTRY := ./flyte/workflows/example.py
 
 .PHONY:dependencies image run console
 
+default: dependencies image console run
+
 dependencies:
 	pip install whylogs-1.0.0rc0-py3-none-any.whl flytekit-0.0.0+develop-py2.py3-none-any.whl
 
