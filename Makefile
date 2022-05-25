@@ -1,5 +1,6 @@
 
-IMAGE := naddeoa/flyte-whylogs-workflow:0.0.1
+VERSION := 0.0.2
+IMAGE := naddeoa/flyte-whylogs-workflow:$(VERSION)
 ENTRY := ./flyte/workflows/example.py
 
 .PHONY:dependencies image run console
